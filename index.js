@@ -1,10 +1,10 @@
 const axios = require('axios'); // Certifique-se de ter a biblioteca axios instalada (npm install axios)
 
-// URL que você deseja verificar
-const url = "https://otica.onrender.com/home";
+// URL que você deseja verificar (URL da página inicial)
+const url = "https://otica.onrender.com/";
 
 // Tempo em milissegundos entre as verificações (14 minutos)
-const intervalo = 14 * 60 * 1000;
+const intervalo = 12 * 60 * 1000;
 
 // Função para verificar a URL
 async function verificarURL() {
@@ -22,5 +22,8 @@ async function verificarURL() {
     }
 }
 
-// Inicie a verificação da URL a cada intervalo de tempo
+// Inicie a verificação da URL imediatamente
+verificarURL();
+
+// Inicie o intervalo de verificação da URL a cada intervalo de tempo
 setInterval(verificarURL, intervalo);
