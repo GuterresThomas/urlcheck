@@ -1,4 +1,4 @@
-const axios = require('axios'); // Certifique-se de ter a biblioteca axios instalada (npm install axios)
+const axios = require('axios'); 
 
 // URL que você deseja verificar (URL da página inicial)
 const url = "https://otica.onrender.com/";
